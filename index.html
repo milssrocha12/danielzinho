@@ -113,13 +113,25 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40vw;
+
+    width: 90%;
     max-width: 400px;
+
+    height: 300px; /* define altura */
+    padding: 40px 25px;
+
     background: url('popup.jpg') no-repeat center/contain;
-    padding: 60px 30px;
+
     display: none;
     text-align: center;
-    font-size: 18px;
+
+    overflow-y: auto; /* resolve vazamento */
+}
+
+#popup p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
 }
 
 button {
@@ -186,13 +198,13 @@ button:active {
 
     #bible {
         left: 15%;
-        top: 35%;
+        top: 45%;
         width: 60vw;
     }
 
     #cross {
         right: 5%;
-        top: 5%;
+        top: 10%;
         width: 20vw;
     }
 
